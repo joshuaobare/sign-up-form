@@ -7,34 +7,44 @@ body {
     display: flex;
 }
 
-img {
+img.leaves {
     height: 100vh;
     width: 33vw;
 }
 
+#logo {
+    position: absolute;
+    width: 33vw;
+    top:33vh;
+}
 .rhs {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 .right-top,.right-mid,.right-bottom {
-    height: 33vh;
+    height: 33.33vh;
     margin-left: 30px;
 }
-
+.right-top {
+    margin-top: 0px;
+}
+.right-mid {
+    width:33vw;
+}
 form{
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 50px;
     justify-content:left;
-    width:20vw;
+    
     
 }
 .form-row {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: flex-start;
-    
+   
     flex-wrap: wrap;
     flex-direction: column;
   }
