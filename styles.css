@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {
@@ -33,33 +34,133 @@ img.logo {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: auto;
+    flex-grow: 2;
 }
-.right-top,.right-mid,.right-bottom {
+.right-top,.right-mid {
     height: 33.33vh;
-    margin-left: 30px;
+    
 }
 .right-top {
-    margin-top: 0px;
+    
+    display:flex;
+    align-items: flex-end;
+    background-color: #f9fafc;
+    margin:0px;
+    padding: 0px;
 }
+
+.text {
+    margin-bottom: 40px;
+    width:34vw;
+    font-weight: bolder;
+    
+}
+
+.text, .text2 {
+    margin-left: 30px;
+    font-size: 24px;
+    
+}
+
+.text2 {
+    margin-top: 20px;
+}
+
+.text, .form, .footer {
+    margin-left: 30px;
+}
+
+
 .right-mid {
-    width:33vw;
+    box-shadow: 10px 5px 5px rgb(0,0,0,10%);
+    margin-left: 0px;
 }
+
+.right-bottom {
+    height: auto;
+}
+
 form{
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 150px;
     justify-content:left;
-    
+    width: 80%;
     
 }
+label {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #39424e;
+}
+
+label.top-fr {
+    margin-top: 10px;
+}
+
 .form-row {
     margin-bottom: 10px;
     display: flex;
-    justify-content: flex-start;
-   
+    /* justify-content: flex-start; */
+    font-weight: bolder;
+    box-sizing: border-box;
     flex-wrap: wrap;
     flex-direction: column;
+    
   }
+
+.form-row input[type='email'] {
+    border-color: #E5E7EB;
+}
+
+input {
+    width: 300px;
+    height:30px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #4a6ed6;
+    box-shadow: 10px 5px 5px rgb(0,0,0,5%);
+    
+}
+
+
+.form-row input[type='email']:invalid,
+.form-row input[type='password']:invalid {
+    border-color: red;
+}
+
+
+  
+button {
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 40px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: white;
+    color: #596D48;
+    cursor:pointer;
+}
+a:hover {
+    cursor: pointer;
+
+}
+.footertext {
+    margin-top: 20px;
+    font-size: 20px;
+}
 
 @font-face {
     font-family: Norse-Bold;
